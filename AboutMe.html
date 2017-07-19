@@ -30,15 +30,15 @@
   
    <script>
     
-    var passWord = 42;
+    var passWord = "42";
     
-    (function Marvin() {
+    (function promptPass() {
 
-  var hello = welcome("What is the answer?");
+  var hello = prompt("What is the answer?");
 
-  while (hello != passWord) {
+  while (hello !== passWord) {
     alert("Don't Panic");
-    return welcome();
+    return Marvin();
   }
 
 }());
